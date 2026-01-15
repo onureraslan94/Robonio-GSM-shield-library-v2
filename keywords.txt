@@ -1,49 +1,50 @@
-#######################################
-# Syntax Coloring Map For RobonioGSM
-#######################################
+# Syntax Coloring Map For RobonioGSMV2
+# Format: KEY<TAB>TYPE  (TAB is required)
 
-#######################################
 # Datatypes (KEYWORD1)
-#######################################
+RobonioGSMV2	KEYWORD1
+RobonioSMS	KEYWORD1
+RobonioGSMV2Audio	KEYWORD1
+RobonioGSMV2KeepAlive	KEYWORD1
+RobonioGSMV2AutoPurge	KEYWORD1
 
-RobonioGSM	KEYWORD1
-Robonio 	KEYWORD1
+# Methods (KEYWORD2)
+begin	KEYWORD2
+attachStream	KEYWORD2
+init	KEYWORD2
+update	KEYWORD2
+sendCommand	KEYWORD2
+isResponsive	KEYWORD2
+setKeepAlive	KEYWORD2
+setAutoPurge	KEYWORD2
 
+enableCallerID	KEYWORD2
+setAutoAnswerRings	KEYWORD2
+answerCall	KEYWORD2
+hangup	KEYWORD2
+isRinging	KEYWORD2
+takeRing	KEYWORD2
+callActive	KEYWORD2
+callEnded	KEYWORD2
+lastCallerNumber	KEYWORD2
 
-#######################################
-# Methods and Functions (KEYWORD2)
-#######################################
+sendSMS	KEYWORD2
+availableSMS	KEYWORD2
+pendingSMSIndex	KEYWORD2
+readSMS	KEYWORD2
+fetchPendingSMS	KEYWORD2
+deleteSMS	KEYWORD2
+deleteAllSMS	KEYWORD2
+getSmsStorage	KEYWORD2
 
+setSpeakerVolume	KEYWORD2
+setRingerVolume	KEYWORD2
+setMicGain	KEYWORD2
+setSidetone	KEYWORD2
 
+attachPowerKey	KEYWORD2
+powerToggle	KEYWORD2
 
-# Methods for calling (KEYWORD2)
-#######################################
-callAnswer	KEYWORD2
-numberCall	KEYWORD2
-searchFinish 	KEYWORD2
-GetSearchStatus	KEYWORD2
-
-
-# Methods for Sms (KEYWORD2)
-#######################################
-smsSend		KEYWORD2
-smsRead		KEYWORD2 
-allSmsDelete	KEYWORD2
-NumberSmsRead	KEYWORD2
-
-# Methods for Module (KEYWORD2)
-#######################################
-Start			KEYWORD2 
-CarrierOpenProfile      KEYWORD2
-CarrierCloseProfile	KEYWORD2
-RTCtime		        KEYWORD2
-Date			KEYWORD2
-RTCupdate		KEYWORD2
-phoneSetFeature 	KEYWORD2
-signalQuality		KEYWORD2
-soundOpen               KEYWORD2
-
-# Methods for Module (KEYWORD3)
-#######################################
-smsText                 KEYWORD2
-smsNumber               KEYWORD2
+# Constants (LITERAL1)
+ROBONIO_GSMV2_DEFAULT_RX_PIN	LITERAL1
+ROBONIO_GSMV2_DEFAULT_TX_PIN	LITERAL1
